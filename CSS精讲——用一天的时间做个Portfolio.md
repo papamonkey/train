@@ -1,5 +1,5 @@
 ## 培训人员
-要求`Freecodecamp`（下称`FCC`)按顺序做，直到完成`130 Build a Tribute Page`这一节，然后将完成的成果链接发给我。
+报名条件：要求`Freecodecamp`（下称`FCC`)按顺序做，直到完成`130 Build a Tribute Page`这一节，然后将完成的成果链接发给我。
 
 > 备注：除了FCC的130的官方示例，也可参考我完成的示例：[https://codepen.io/liuwencan/full/PjvdJg/](https://codepen.io/liuwencan/full/PjvdJg/)。
 
