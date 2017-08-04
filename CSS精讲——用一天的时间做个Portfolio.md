@@ -5,7 +5,7 @@
 
 ## 预先准备
 - 在`github`下载[脚手架代码](https://github.com/papamonkey/papamonkey.github.io/tree/master/train1)，根据提示配置好环境，培训时我们将在这个脚手架上完成我们的项目。
-- PPT有兴趣可以预先了解，点击这里[下载](第一讲-css精讲.key)
+- PPT有兴趣可以预先了解，点击这里[下载](第一讲-css精讲.pdf)
 
 
 ## 培训主要目标
