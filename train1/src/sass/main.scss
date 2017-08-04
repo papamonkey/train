@@ -1,0 +1,269 @@
+$huge-font-size:48px;
+$large-font-size:32px;
+$medium-font-size:24px;
+$strong-font-size:18px;
+$normal-font-size:12px;
+$small-font-size:10px;
+
+$default-margin:15px;
+
+$header-height:80px;
+$footer-height:80px;
+$nav-btn-height:24px;
+$nav-btn-vpad:8px;
+$main-color:#09BB07;
+
+html {
+    font-size:12px;
+    margin:0;
+    padding:0;
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+a {
+    text-decoration:none;
+}
+
+h1 {
+    font-size:$huge-font-size;
+}
+
+h2 {
+    font-size:$large-font-size;
+}
+
+h3 {
+    font-size:$medium-font-size;
+}
+
+.clearfix {
+    clear:both;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.container {
+    margin:0 auto;
+    width:970px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.row {
+    margin-left:-$default-margin;
+    margin-right:-$default-margin;
+    // &:before,&:after {
+    //     display:table;
+    //     content:"";
+    // }
+}
+
+// 一定要使用浮动，如果你使用的inline-block会发现得不到预期结果
+// 这是由于不同标签之间的空格也被解析成盒子，它们会影响宽度的计算
+.column-3 {
+    float:left;
+    width:33.3332%;
+    margin:0;
+    border:0;
+    padding:0;
+    // margin-left:$default-margin;
+    // margin-right:$default-margin;
+}
+
+.badge {
+    display:inline-block;
+    padding:4px 8px;
+    border-radius:4px;
+    background-color:$main-color;
+    color:white;
+    font-size:$small-font-size;
+    font-weight:bold;
+}
+
+#header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:$header-height;
+    background-color:$main-color;
+    box-shadow:0 4px 8px 0 rgba(7, 17, 27, 0.3);
+
+    #logo {
+        float:left;
+        display:block;
+        line-height:$header-height;
+        color:white;
+        font-size:$large-font-size;
+    }
+
+    #nav {
+        ul {
+            float:right;
+            margin:($header-height - $nav-btn-height - $nav-btn-vpad * 2) / 2;
+            overflow:hidden;
+            li {
+                display:inline-block;
+                padding:$nav-btn-vpad;
+
+
+                a {
+                    color:white;
+                    text-decoration:none;
+                    line-height:$nav-btn-height;
+                }
+
+                a:hover {
+                    color:#eee;
+                }
+
+                &.active {
+                    border-radius:8px;
+                    border:1px solid white;
+                }
+            }
+
+
+
+        }
+    }
+}
+
+#main {
+    margin-top:$header-height;
+
+    .separator {
+        display:block;
+        margin:0 auto;
+        border:0;
+        border-top:5px solid black;
+        max-width:520px;
+    }
+
+    #about {
+        background-color:#ccc;
+        padding:10px 15px;
+        #intro {
+            width:700px;
+            p {
+                text-indent:2em;
+                font-size:$strong-font-size;
+            }
+            #category {
+                margin-top:16px;
+            }
+        }
+        #creator {
+            overflow:hidden;
+            .avatar {
+                display:block;
+                max-width:250px;
+                border-radius:50%;
+                margin:10px auto;
+            }
+        }
+    }
+
+    #cases {
+        padding-top:10px;
+        padding-bottom:20px;
+        background-color:#eee;
+        overflow:hidden;
+
+
+        .cards {
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        .card {
+            display:block;
+            margin-left:$default-margin;
+            margin-right:$default-margin;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            background-color:white;
+            
+            img {
+                display:block;
+                margin:0 auto;
+                max-width:100%;
+                height:200px;
+            }
+            h3 {
+                text-align:center;
+                color:black;
+            }
+
+            &:hover {
+                border:1px solid $main-color;
+            }
+        }
+    }
+    
+    #contactus {
+        padding-top:10px;
+        padding-bottom:20px;//试试去掉这句和上面那句，将由于H2的关系而出现margin合并
+        background-color:#ccc;
+        overflow:hidden;
+        .detail {
+            float:left;
+            width:50%;
+            text-align:center;
+        }
+        .sociliates {
+            margin-left:50%;
+            ul {
+                margin:20px auto;
+                li {
+                    display:inline-block;
+                    margin-right:10px;
+                    a {
+                        display:block;
+                        border-radius:50%;
+                        padding:8px;
+                        width:$medium-font-size + 8px;
+                        height:$medium-font-size + 8px;
+                        border:1px solid white;
+                        font-size:$medium-font-size;
+                        text-align:center;
+                        i.fa-wechat {
+                            color:$main-color;
+                        }
+
+                        i.fa-qq {
+                            color:#337ab7;    
+                        }
+
+                        &:hover {
+                            border:1px solid $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    background-color:black;
+    color:white;
+    height:$footer-height;
+    h3 {
+        line-height:$footer-height;
+        margin:0;
+    }
+}

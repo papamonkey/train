@@ -1,0 +1,180 @@
+html {
+  font-size: 12px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 24px; }
+
+.clearfix {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  margin: 0 auto;
+  width: 970px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.column-3 {
+  float: left;
+  width: 33.3332%;
+  margin: 0;
+  border: 0;
+  padding: 0; }
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #09BB07;
+  color: white;
+  font-size: 10px;
+  font-weight: bold; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #09BB07;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.3); }
+  #header #logo {
+    float: left;
+    display: block;
+    line-height: 80px;
+    color: white;
+    font-size: 32px; }
+  #header #nav ul {
+    float: right;
+    margin: 20px;
+    overflow: hidden; }
+    #header #nav ul li {
+      display: inline-block;
+      padding: 8px; }
+      #header #nav ul li a {
+        color: white;
+        text-decoration: none;
+        line-height: 24px; }
+      #header #nav ul li a:hover {
+        color: #eee; }
+      #header #nav ul li.active {
+        border-radius: 8px;
+        border: 1px solid white; }
+
+#main {
+  margin-top: 80px; }
+  #main .separator {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-top: 5px solid black;
+    max-width: 520px; }
+  #main #about {
+    background-color: #ccc;
+    padding: 10px 15px; }
+    #main #about #intro {
+      width: 700px; }
+      #main #about #intro p {
+        text-indent: 2em;
+        font-size: 18px; }
+      #main #about #intro #category {
+        margin-top: 16px; }
+    #main #about #creator {
+      overflow: hidden; }
+      #main #about #creator .avatar {
+        display: block;
+        max-width: 250px;
+        border-radius: 50%;
+        margin: 10px auto; }
+  #main #cases {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    overflow: hidden; }
+    #main #cases .cards {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    #main #cases .card {
+      display: block;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white; }
+      #main #cases .card img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: 200px; }
+      #main #cases .card h3 {
+        text-align: center;
+        color: black; }
+      #main #cases .card:hover {
+        border: 1px solid #09BB07; }
+  #main #contactus {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #ccc;
+    overflow: hidden; }
+    #main #contactus .detail {
+      float: left;
+      width: 50%;
+      text-align: center; }
+    #main #contactus .sociliates {
+      margin-left: 50%; }
+      #main #contactus .sociliates ul {
+        margin: 20px auto; }
+        #main #contactus .sociliates ul li {
+          display: inline-block;
+          margin-right: 10px; }
+          #main #contactus .sociliates ul li a {
+            display: block;
+            border-radius: 50%;
+            padding: 8px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid white;
+            font-size: 24px;
+            text-align: center; }
+            #main #contactus .sociliates ul li a i.fa-wechat {
+              color: #09BB07; }
+            #main #contactus .sociliates ul li a i.fa-qq {
+              color: #337ab7; }
+            #main #contactus .sociliates ul li a:hover {
+              border: 1px solid #09BB07; }
+
+#footer {
+  background-color: black;
+  color: white;
+  height: 80px; }
+  #footer h3 {
+    line-height: 80px;
+    margin: 0; }
