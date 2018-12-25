@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>表格示例-边框</title>
+</head>
+
+<body>
+  <h2>边框为1px</h2>
+  <table border="1">
+    <tr>
+      <td>编号</td>
+      <td>班级</td>
+      <td>姓名</td>
+      <td>入学时间</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>一班</td>
+      <td>小王</td>
+      <td>2018年7月</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>一班</td>
+      <td>小谢</td>
+      <td>2018年7月</td>
+    </tr>
+  </table>
+
+  <h2>边框为4px</h2>
+  <table border="4">
+    <tr>
+      <td>编号</td>
+      <td>班级</td>
+      <td>姓名</td>
+      <td>入学时间</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>一班</td>
+      <td>小王</td>
+      <td>2018年7月</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>一班</td>
+      <td>小谢</td>
+      <td>2018年7月</td>
+    </tr>
+  </table>
+
+  <h2>合并边框(使用style属性控制)</h2>
+  <!-- 第一次出现style -->
+  <table border="1" style="border-collapse:collapse;">
+    <tr>
+      <td>编号</td>
+      <td>班级</td>
+      <td>姓名</td>
+      <td>入学时间</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>一班</td>
+      <td>小王</td>
+      <td>2018年7月</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>一班</td>
+      <td>小谢</td>
+      <td>2018年7月</td>
+    </tr>
+  </table>
+  <h2>合并边框-4px的正确做法(使用style属性控制)</h2>
+  <!-- 第一次出现style -->
+  <table border="1" style="border-collapse:collapse;border:4px solid black;">
+    <tr>
+      <td>编号</td>
+      <td>班级</td>
+      <td>姓名</td>
+      <td>入学时间</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>一班</td>
+      <td>小王</td>
+      <td>2018年7月</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>一班</td>
+      <td>小谢</td>
+      <td>2018年7月</td>
+    </tr>
+  </table>
+  <p>结论：是否感觉使用属性控制的外观看起来比较混乱，而且不知道怎么去做精细控制？这就对了，table的属性控制是很弱的。外观通过CSS可以做到更精准的控制。一般使用表格，它的border，一般就设置为0或者1，然后border-collapse:collapse。在此基础上，去考虑如何用CSS进一步优化外观。</p>
+</body>
+
+</html>

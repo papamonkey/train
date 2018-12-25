@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>表格其他属性用法</title>
+    <style media="screen">
+      #table3 td {
+        padding: 10px 10px 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>cellspacing属性</h3>
+    <table border="1" cellspacing="20">
+      <tr>
+        <td>编号</td>
+        <td>班级</td>
+        <td>姓名</td>
+        <td>入学时间</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一班</td>
+        <td>小王</td>
+        <td>2018年7月</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>一班</td>
+        <td>小谢</td>
+        <td>2018年7月</td>
+      </tr>
+    </table>
+    <p>实际项目中，通常样式表的border-collapse:collapse;有设置，cellspacing就不起作用了，所以实际用得少。</p>
+    <h2>cellpadding属性</h2>
+    <table border="1" cellpadding="10" style="border-collapse:collapse;" >
+      <tr>
+        <td>编号</td>
+        <td>班级</td>
+        <td>姓名</td>
+        <td>入学时间</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一班</td>
+        <td>小王</td>
+        <td>2018年7月</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>一班</td>
+        <td>小谢</td>
+        <td>2018年7月</td>
+      </tr>
+    </table>
+    <h2>使用样式表的padding替换cellpadding属性</h2>
+    <!-- 这里的padding是通过<head>里面的<style>标签设置的，这是超纲内容，知道下它的效果
+    相当于给表格里面的所有td都加了padding -->
+    <table border="1" style="border-collapse:collapse;"  id="table3">
+      <tr>
+        <td>编号</td>
+        <td>班级</td>
+        <td>姓名</td>
+        <td>入学时间</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>一班</td>
+        <td>小王</td>
+        <td>2018年7月</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>一班</td>
+        <td>小谢</td>
+        <td>2018年7月</td>
+      </tr>
+    </table>
+    <p>结论：cellspacing属性由于样式表的border-collapse的原因会失效，而cellpadding属性可以用样式表的padding代替，还能对4个方向以及某一行做更精细的控制。所以这两个属性实际项目也很少用。</p>
+    <h2>设置宽度、水平对齐、垂直对齐</h2>
+    <table border="1" width="500px"  style="border-collapse:collapse;">
+      <tr>
+        <td>编号</td>
+        <td width="80px">班级</td>
+        <td width="100px">姓名</td>
+        <td>备注</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td valign="top">一班</td>
+        <td align="center">小王</td>
+        <td>这是一段非常冗长的文字。这是一段非常冗长的文字这是一段非常冗长的文字这是一段非常冗长的文字这是一段非常冗长的文字这是一段非常冗长的文字这是一段非常冗长的文字</td>
+      </tr>
+    </table>
+    <p>结论：width属性是单元格最常用的一个属性，CSS也可以达到同样效果；而水平对齐和垂直对齐，分别是align和valign属性，实际项目中我们会用CSS去做，分别对应text-align:center;和vertical-align:middle;。这里特别需要注意的是垂直对齐，垂直对齐是表格最实用的一个功能。在其他非表格元素中，垂直对齐一直是个难题。</p>
+  </body>
+</html>
