@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>第一个表单实例</title>
+</head>
+<body>
+  <h2>注册表单示例</h2>
+  <form action="http://www.codefriend.top/api/form.php" method="get">
+    <div>
+      <label for="name">用户名:</label>
+      <input type="text" name="name" value="" placeholder="请输入">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" value="" placeholder="输入Email">
+    </div>
+    <div>
+      <label for="password">密码:</label>
+      <input type="password" name="password" value="" placeholder="请输入密码">
+    </div>
+    <div>
+      <label for="confirm_password">确认密码:</label>
+      <input type="password" name="confirm_password" value="" placeholder="再次输入密码">
+    </div>
+    <div>
+      <!-- 试试删除id属性，然后运行时点击“女性” -->
+      <input type="radio" name="sex" value="male" id="male" checked>
+      <label for="male">男性</label>
+
+      <input type="radio" name="sex" value="female" id="female">
+      <label for="female">女性</label>
+    </div>
+    <div>
+      <input type="submit" name="" value="提交">
+      <input type="reset" name="" value="重置">
+    </div>
+  </form>
+</body>
+</html>
